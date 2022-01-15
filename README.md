@@ -11,3 +11,4 @@ Information Operations October 2020: https://transparency.twitter.com/en/reports
 - https://www.facebook.com/teattapol/posts/3342010955885300
 - https://fsi.stanford.edu/news/twitter-takedown-october-2020
 - https://stanford.app.box.com/v/202009-sio-thailand
+- https://lengyi.medium.com/twitterio-2-text-analysis-visualization-5111163430aa
