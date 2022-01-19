@@ -1,5 +1,7 @@
 import re
 import string
+from tkinter import E
+import emoji
 
 
 def clean_tweet(text):
@@ -35,6 +37,14 @@ def clean_tweet(text):
     text = re.sub(space_re, "", text)
 
     return text
+
+
+def get_emojis(text):
+    # https://stackoverflow.com/questions/43146528/how-to-extract-all-the-emojis-from-text
+    demojised_text = emoji.demojize(text)
+    emoji_re = r"(:[!_\-\w]+:)"
+    extracted_emojis = re.findall(emoji_re, demojised_text)
+    return [emoji.emojize(i) for i in extracted_emojis]
 
 
 # user id in tweet_text column can be hashed
